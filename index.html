@@ -1,168 +1,562 @@
 <!DOCTYPE html>
-<html lang="ja">
-<!-- lang="ja" -->
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <!-- title：適切に修正 -->
-  <link rel="stylesheet" href="https://aratanakamura.github.io/PF/css/style.css" />
-
+  <title>Noodle</title>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://aratanakamura.github.io/Cup-Noodles/css/noodle.css" />
+  <script src="js/jquery-3.5.1.min (2).js"></script>
+  <script type="text/javascript" src="js/noodle.js"></script>
 </head>
 
-<p class="to-top">🔝</p>
-<!-- top -->
-
 <body>
-  <div class="nav_fixed">
-    <header class="navigation_bar">
-      <div>
-        <ul>
-          <li class="nav_top">TOP</li>
-          <li class="nav_self_introduction">自己紹介</li>
-          <li class="nav_my_skill">スキル</li>
-          <li class="nav_deliverable">ポートフォリオ</li>
-          <li class="nav_inquiry_form">お問い合わせ</li>
-        </ul>
+  <div class="fixed">
+    <div class="first-line">
+      <!-- ヘッダー -->
+      <img class="test" src="image/ダウンロード.png" alt="レスポンシブ ハンバーガーメニュー" />
+      <img class="noodle-logo" src="image/bnr_brandsite_cup.jpg" alt="カップヌードルのロゴ" />
+      <div class="first-line-centerNoodle">
+        <img class="first-line-centerNoodle-img" src="image/bnr_brandsite_cup.jpg" alt="レスポンシブ 中央 カップヌードルのロゴ" />
       </div>
-    </header>
-  </div>
-  <!-- main -->
-  <main class="main">
-    <div class="main_text">
-      <div>Arata's Portfolio</div>
-    </div>
-  </main>
-  <!-- 自己紹介 -->
-  <div class="self_introduction">
-    <div class="self_introduction_about">
-      <div>自己紹介</div>
-    </div>
-    <div class="self_i">
-      <div class="self_introduction_detail">
-        <ul>
-          <li>名前:中村 新</li>
-          <li>年齢:27</li>
-          <li>出身:滋賀県(現在は埼玉県に在住)</li>
-          <li>学歴:高知大学理学部応用理学科</li>
-          <li>
-            来歴:新卒から3年間消防士を勤め、今年から心機一転エンジニアを志す
-          </li>
-          <li>
-            その他:趣味は野球と筋トレで、野球も筋トレも10年以上つづけている
-          </li>
-        </ul>
-      </div>
-      <div class="self_img">
-        <img class="self_img_photo" src="img/IMG_1410.jpg" alt="" />
-      </div>
-    </div>
-  </div>
-  <!-- スキル -->
-  <div class="my_skill">
-    <div>
-      <div class="my_skill_title">スキル</div>
-    </div>
-    <div class="my_skill_container">
-      <div class="my_skill_flex">
-        <div class="my_skill_flex_box">
-          <div class="font">
-            <i class="fas fa-tv"></i>
-          </div>
-          <div class="my_text_engin">エンジニア案件</div>
-          <div>
-            HTML,CSS,Javascript,jQuery等を使ったフロントエンド案件に対応します。
-            常駐、リモートワーク及び週1～週5まで対応します。
-          </div>
+      <!-- ナビゲーションリスト -->
+      <div class="navList">
+        <div class="navList-1">
+          <img class="topLogo" src="image/top.svg" alt="トップロゴ" />
+          <p class="navList-1-p">TOP</p>
         </div>
-        <div class="my_skill_flex_box">
-          <div class="font2">
-            <i class="fab fa-weebly"></i>
-          </div>
-          <div class="my_text_engin">Web制作</div>
-          <div>
-            LP１枚から企業向けサイトまで対応。全てレスポンシブ対応で仕上げます。納品後のメンテナンス性も考慮したサイト作りを心がけております。
-          </div>
+        <div class="navList-2">
+          <img class="top-logoMugHungryDays" src="image/hungrydays_new.svg" alt="麦わら帽子" />
+          <p class="navList-2-p">HUNGRY DAYS</p>
+          <p class="navList-2-yaz">▼</p>
         </div>
-        <!-- スキル3つ目 -->
-        <div class="my_skill_flex_box3">
-          <div class="font3">
-            <i class="fab fa-git"></i>
-          </div>
-          <div class="my_text_engin3">使用ツール</div>
-          <div>
-            Git/GitHub/GitLab/SourceTree
-          </div>
+        <div class="navList-3">
+          <img class="youTubeCm" src="image/cm_new.svg" alt="ユーチューブのロゴ" />
+          <p class="navList-3-p">CM</p>
+        </div>
+        <div class="navList-4">
+          <img class="newProducts" src="image/products_new.svg" alt="プロダクトロゴ" />
+          <p class="navList-4-p">PRODUCTS</p>
+        </div>
+        <div class="navList-5">
+          <img class="ikaSpecial" src="image/special.svg" alt="錨のマーク" />
+          <p class="navList-5-p">SPECIAL</p>
+          <p class="navList-5-yaz">▼</p>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- PF -->
-  <div class="service_contents">
-    <div class="service_contents_text">
-      <div>ポートフォリオ</div>
+  <!-- アオハルかよ 麦わら帽子の一味 -->
+  <div class="top"></div>
+  <div class="aoh">
+    <img class="aohMembers" src="image/kv_l.jpg" alt="" />
+    <img class="aohMembers-sp" src="image/kv_s.jpg" alt="" />
+    <!-- ハングリーデイズ カップヌードル -->
+    <div class="hungryDays-cupNoodle">
+      <img class="hungryDays-imgCupNoodle" src="image/kv_logo.png" alt="ハングリーデイズ カップヌードル" />
     </div>
-    <div class="service_contents_text2">
-      <div>LP及びWebサイト</div>
-    </div>
-    <div class="service_contents_text2">
-      <div class="skill_set">HTML/CSS/Javascript/jQuery</div>
-    </div>
-    <div>
-      <div class="PF">
-        <a href="https://aratanakamura.github.io/practice/">
-          <div class="a1">
-            <img class="PF_1" src="img/man-cross-banner-woman.jpg" alt="" /></div>
-        </a>
-        <a href="https://aratanakamura.github.io/LP-/">
-          <div class="a2">
-            <img class="PF_2" src="img/conte1.png" alt="" /></div>
-        </a>
-        <a href="https://aratanakamura.github.io/Cup-Noodles/"><img class="PF_3"
-            src="img/[www.cupnoodle.jp][616]kvs.jpg" alt="" /></a>
-        <a href="https://aratanakamura.github.io/Guardian/">
-          <div class="PF_4">
-            <img class="PF_4_img" src="img/logo.jpg" alt="" />
+  </div>
+  <div class="top"></div>
+  <!-- 太陽が背景のパララックス -->
+  <div class="background-image-Parallax-sun">
+    <!-- 浮き上がってくる文章 -->
+    <section class="section-top">
+      <div class="if-onePeaceCara">
+        <div class="if-onePeaceCara-div">
+          <p class="if-onePeaceCara-div-p1">もしも、ワンピースの登場人物が</p>
+          <p class="if-onePeaceCara-div-p2">現代で高校生活を送っていたら――</p>
+        </div>
+        <div class="if-onePeaceCara-div-2">
+          <p class="if-onePeaceCara-div-p3">手に負えないうねりとともに、</p>
+          <p class="if-onePeaceCara-div-p4">
+            青くて、アツい、冒険の夜明けがやってくる。
+          </p>
+          <img class="onePiece-sei" src="image/aoharuone.svg" alt="ONE PIECE 青春" />
+        </div>
+      </div>
+    </section>
+    <!-- カット集 -->
+    <section class="section-second">
+      <div class="cut-inner">
+        <img class="inner-first" src="image/cut_1.jpg?ver=3" alt="ナミ　海岸　ダッシュ" />
+        <img class="inner-second" src="image/cut_2.jpg?ver=3" alt="ナミ　読書　電車　その他のメンバー" />
+        <img class="inner-third" src="image/cut_3.jpg?ver=3" alt="ナミ　紙吹雪　背景" />
+        <img class="inner-fourth" src="image/cut_4.jpg?ver=3" alt="ナミ　麦わら帽子　その他のメンバー" />
+        <img class="inner-fifth" src="image/cut_5.jpg?ver=3" alt="ナミ　感動　泣きかけ" />
+      </div>
+    </section>
+    <!-- 動画ゾーン　左上　説明 -->
+    <section class="section-third">
+      <div class="section-third-div">
+        <div class="cm-logo">CM</div>
+        <img class="new-logo" src="image/icon_new_red.svg" alt="白髭" />
+        <div class="hungryDays-onePiece-topBattle">
+          hungryDays ワンピース 頂上騎馬戦 篇
+        </div>
+      </div>
+    </section>
+    <!-- youTubeのリンク貼り付け箇所 -->
+    <section class="frameZone">
+      <iframe width="1000" height="500" src="https://www.youtube.com/embed/-EmBtN31dps" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="section-fouTh"></section>
+    <!-- ブックマーク　詳細を見る -->
+    <section class="section-fifth">
+      <div class="section-fifth-div">
+        <img class="book-mark" src="image/icon_cm_detail.png" alt="本　マーク" />
+        <div class="detail-watch">詳細を見る</div>
+      </div>
+    </section>
+    <!-- アイドル　女の子 -->
+    <section class="section-sixth">
+      <img class="section-sixth-image" src="image/banner_miso.jpg" alt="アイドルの女の子" />
+      <div class="cupNoodleMiso-kizAi">
+        カップヌードル味噌✖キズナアイ　サイト公開中
+      </div>
+      <!-- CM一覧を見る -->
+      <div class="shoHiNn-itiRaNn-background1">
+        <div class="shoHiNn-itiRaNn-box1">
+          <div class="squ-box1">
+            <p class="itiRaNn-watch1">CM一覧を見る</p>
+            <img class="noodleMark1" src="image/products_new.svg" alt="ヌードルマーク" />
+            <img class="yazMark1" src="image/arrow_fill.svg" alt="矢印　リンク" />
           </div>
-        </a>
-        <a href=""> <img class="PF_5" src="" alt="" /></a>
-        <a href=""> <img class="PF_6" src="" alt="" /></a>
+        </div>
+      </div>
+    </section>
+    <section class="section-seventh">
+      <!-- 左に無限ループする背景 -->
+      <section class="section-eighth">
+        <div class="skinBody1"></div>
+      </section>
+      <!-- キャラクター一覧 -->
+      <div class="section-nineTh">
+        <div class="section-nineTh-1">
+          <img class="members" src="image/chara_banner.jpg" alt="麦わらの一味全員" />
+          <img class="members-left-top" src="image/icon_new_red.svg" alt="左上　new　ロゴ" />
+          <div class="cara-all-star">
+            <p class="cara-all-star-chaRaCTERS">chaRaCTERS</p>
+            <p class="cara-all-star-chaRa">キャラクター一覧を見る</p>
+            <img class="cara-all-star-img1" src="image/arrow_fill.svg" alt="" />
+            <img class="cara-all-star-img2" src="image/uc?id=1WNpJdVgF0T1xrWMixAp-SBuCzF3Rr7CV" alt="" />
+          </div>
+        </div>
+        <!-- ギャラリーを見る -->
+        <div class="section-nineTh-2">
+          <img class="gallaLy-watch" src="image/gallery_banner.jpg?ver=3" alt="ナミ　頬机　教室の中" />
+          <img class="members-left-top-2" src="image/icon_new_red.svg" alt="左上　new　ロゴ" />
+          <div class="cara-all-star">
+            <p class="cara-all-star-chaRaCTERS">gallaLy</p>
+            <p class="cara-all-star-chaRa">ギャラリーを見る</p>
+            <img class="cara-all-star-img1" src="image/arrow_fill.svg" alt="" />
+            <img class="cara-all-star-img2" src="image/uc?id=1WNpJdVgF0T1xrWMixAp-SBuCzF3Rr7CV" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- 固定背景其一 -->
+  <div class="section-twelveTh"></div>
+  <div class="bar"></div>
+  <!-- サンジの横で左に無限ループする画像 -->
+  <div class="goldscroll"></div>
+  <!-- プロダクト -->
+  <div class="product-text-background-color">
+    <div class="product-text">products</div>
+  </div>
+  <section class="section-eleventh">
+    <div class="js-scroll"></div>
+    <!-- 右端でカップヌードル食べてるサンジ -->
+    <img class="sanji-img" src="image/products_sanJi.png" alt="サンジ　カップヌードル　食べてる" />
+    <!-- 味噌カップヌードルとノーマルのカップヌードル -->
+    <div class="block-1">
+      <figure class="new-noodle-1">
+        <div class="new-noodle-1-Explanation">
+          <p class="noodle-rich-1">カップヌードルリッチ</p>
+          <p class="noodle-rich-2">カップヌードルリッチ</p>
+          <p class="samGeTanAji">参鶏湯味</p>
+          <p class="heart-body-rich-menu">
+            心も体も嬉しい、リッチな癒し系メニュー
+          </p>
+        </div>
+        <div class="shoHiNn-details-box">
+          <p class="shoHiNn-details">商品詳細を見る</p>
+        </div>
+        <div class="onLineStore-perChaIs-box">
+          <p class="onLineStore-perChaIs">オンラインストアで購入</p>
+        </div>
+        <div>
+          <img class="samGe-noodle" src="image/product_58.png" alt="お椀で食べる　味噌　イメージ" />
+        </div>
+      </figure>
+    </div>
+    <div class="hidden1">
+      <div class="background-noodle-image">
+        <!-- マウスオーバーしたときに拡大表示させる画像かつ一番下に潜らせる画像 -->
+        <img class="samGeTan-img" src="image/unnamed.jpg" alt="黄金鳥油　商品　イメージ" />
+      </div>
+    </div>
+    <!-- 謎肉と濃厚海老のヌードル -->
+    <div class="block-2">
+      <div class="new-noodle-2">
+        <div class="new-noodle-1-Explanation2">
+          <p class="noodle-rich-1-2">カップヌードル</p>
+          <p class="noodle-rich-2-2">カップヌードル</p>
+          <p class="samGeTanAji-2">海老の濃厚トマトクリーム</p>
+          <p class="heart-body-rich-menu-2">
+            トマトクリームの酸味と海老の旨みが絶妙！
+          </p>
+        </div>
+        <div class="shoHiNn-details-box-2">
+          <p class="shoHiNn-details-2">商品詳細を見る</p>
+        </div>
+        <div class="onLineStore-perChaIs-box-2">
+          <p class="onLineStore-perChaIs-2">オンラインストアで購入</p>
+        </div>
+        <img class="samGe-noodle-2" src="image/[www.cupnoodle.jp][129]product59.png" alt="年に一度の謎肉祭" />
+      </div>
+    </div>
+    <div class="hidden2">
+      <div class="background-noodle-image-2">
+        <img class="samGeTan-img-2" src="image/[www.cupnoodle.jp][791]shizurularge61.jpg" alt="海老濃厚トマト　イメージ" />
+      </div>
+    </div>
+    <!-- //　謎肉たっぷりフカヒレスープ -->
+    <div class="block-3">
+      <div class="new-noodle-3">
+        <div class="new-noodle-1-Explanation3">
+          <p class="noodle-rich-1-3">カップヌードル</p>
+          <p class="noodle-rich-2-3">カップヌードル</p>
+          <p class="samGeTanAji-3">黄金鶏油 鶏塩</p>
+          <p class="heart-body-rich-menu-3">
+            鶏の香りと旨味が広がる "黄金鶏油" が味の決め手！
+          </p>
+        </div>
+        <div class="shoHiNn-details-box-3">
+          <p class="shoHiNn-details-3">商品詳細を見る</p>
+        </div>
+        <div class="onLineStore-perChaIs-box-3">
+          <p class="onLineStore-perChaIs-3">オンラインストアで購入</p>
+        </div>
+        <img class="samGe-noodle-3" src="image/[www.cupnoodle.jp][314]product62.png" alt="フカヒレスープ味　イメージ" />
+      </div>
+    </div>
+    <div class="hidden3">
+      <div class="background-noodle-image-3">
+        <img class="samGeTan-img-3" src="image/[www.cupnoodle.jp][651]shizurularge59.jpg" alt="謎肉たっぷり　イメージ" />
+      </div>
+    </div>
+    <!-- //　グリーンカレーヌードル -->
+    <div class="block-4">
+      <div class="new-noodle-4">
+        <div class="new-noodle-1-Explanation4">
+          <p class="noodle-rich-1-4">カップヌードルBIG</p>
+          <p class="noodle-rich-2-4">カップヌードルビッグ</p>
+          <p class="samGeTanAji-4">
+            ジューシィな"謎肉"が増えて、食べ応えさらにアップ！
+          </p>
+          <p class="heart-body-rich-menu-4"></p>
+        </div>
+        <div class="shoHiNn-details-box-4">
+          <p class="shoHiNn-details-4">商品詳細を見る</p>
+        </div>
+        <div class="onLineStore-perChaIs-box-4">
+          <p class="onLineStore-perChaIs-4">オンラインストアで購入</p>
+        </div>
+        <img class="samGe-noodle-4" src="image/product_60.png" alt="グリーンカレー　ヌードル　画像" />
+      </div>
+    </div>
+    <div class="hidden4">
+      <div class="background-noodle-image-4">
+        <img class="samGeTan-img-4" src="image/[www.cupnoodle.jp][685]shizurularge60.jpg" alt="何ヌードルかよくわからん　イメージ" />
+      </div>
+    </div>
+  </section>
+  <!-- 商品一覧を見る　ボックス -->
+  <div class="shoHiNn-itiRaNn-background">
+    <div class="shoHiNn-itiRaNn-box">
+      <div class="squ-box">
+        <p class="itiRaNn-watch">商品一覧を見る</p>
+        <img class="noodleMark" src="image/products_new.svg" alt="ヌードルマーク" />
+        <img class="yazMark" src="image/[www.cupnoodle.jp][630]arrowr.png" alt="矢印　リンク" />
       </div>
     </div>
   </div>
-  <!-- お問い合わせ -->
-  <div class="inquiry_form">
-    <div class="inquiry">
-      <div class="inquiry_text">お問い合わせ</div>
+  <section>
+    <div class="delete-goldscroll">
+      <!-- 固定背景其２　燃え盛る場所 -->
+      <div class="twelveTh">
+        <div class="section-twelveTh"></div>
+      </div>
+      <!-- 背景　パララックス　スペシャルまで -->
+      <div class="background-image-Parallax-sun2">
+        <!-- 音楽　マキホル -->
+        <section class="thirteenth">
+          <div class="first-section">
+            <div class="first-section-box">
+              <div class="music-box">音楽</div>
+              <p class="maxim">マキシマム ザ ホルモン</p>
+              <p class="hung-p">｢ ハングリー・プライド 」</p>
+              <p class="lyricsCompose">作詞/作曲　マキシマムザ亮君</p>
+              <p class="arrangement">編曲　マキシマム ザ ホルモン</p>
+              <img class="img-maxim" src="image/mth.jpg" alt="マキシマムザホルモン" />
+            </div>
+          </div>
+          <div class="second-section">
+            <p>
+              1998年八王子にて結成。日本語を独自の語感表現で操り、意味不明に見えて実は奥深いメッセージ性を持つ強烈な歌詞と、激し
+            </p>
+            <p>
+              いラウドロックにPOPなメロディを融合させたサウンドスタイルが特徴で、マキシマムザ亮君
+              (歌と6弦と弟)、ダイスケはん (キ
+            </p>
+            <p>
+              ャーキャーうるさい方)、上ちゃん (4弦)、ナヲ
+              (ドラムと女声と姉)の4人からなるロックバンド。
+            </p>
+            <p>
+              オリコンアルバムチャートで3週連続1位を獲得したアルバム「予襲復讐」や、オリコン週間DVD総合ランキングで1位を獲得し
+            </p>
+            <p>
+              た映像作品「DeKa Vs DeKa
+              ～デカ対デカ～」に続き、2018年11月に漫画+CDの“書籍”として発刊された新作「これからの麺
+            </p>
+            <p>
+              カタコッテリの話をしよう」が、漫画の内容や楽曲だけではなく特典等も話題を集め、ロックバンド史上初の快挙となるオリコ
+            </p>
+            <p>
+              ン週間BOOKランキングのコミック・エッセイジャンルで3週連続1位を獲得した。
+            </p>
+            <p>
+              2018年9月にダイスケはんの重度の頸椎椎間板ヘルニア治療のためライブ活動を一時休止したが、手術成功と術後の経過良好に
+            </p>
+            <p>つき、2019年5月よりライブ活動を再開。</p>
+            <p>
+              さらに、マキシマムザ亮君による「ロックバンドのフランチャイズ化
+              マキシマム ザ ホルモン2号店プロジェクト」が日本最大
+            </p>
+            <p>
+              の広告＆マーケティング賞“2019 59th ACC TOKYO CREATIVITY
+              AWARDS”にてACCシルバーを受賞するなどバンドの枠
+            </p>
+            <p>を超え、多岐にわたって活動中！</p>
+          </div>
+          <div class="third-section">
+            <div class="third-section-box">
+              <div class="music-box">「ONE PIECE」原作</div>
+              <p class="maxim">尾田栄一郎</p>
+              <div class="fourth-section">
+                <p>
+                  1975年1月1日、熊本県熊本市に生まれる。高校在学中の1992年
+                </p>
+                <p>に集英社週刊少年ジャンプ"第44回手塚賞"応募。</p>
+                <p>『WANTED！』で準入選を受賞。1993年には『一鬼夜行』</p>
+                <p>
+                  で"第104回ホップ☆ステップ賞"に入選。その後も数々の読み切
+                </p>
+                <p>り漫画をジャンプ誌上で発表し、1997年『ONE PIECE』の連</p>
+                <p>載を開始、現在に至る。</p>
+              </div>
+            </div>
+          </div>
+          <div class="third-section">
+            <div class="third-section-box">
+              <div class="music-box">キャラクターデザイン</div>
+              <p class="maxim">窪之内英策</p>
+              <div class="fourth-section">
+                <p>代表作「ツルモク独身寮」「ショコラ」は翻訳出版のみなら</p>
+                <p>
+                  ず、実写化やドラマ化され、国内外でも広く展開された。現在
+                </p>
+                <p>
+                  はイラスト制作を中心に活動中。色鉛筆やマーカーを用いて描
+                </p>
+                <p>
+                  き出す、美麗で生き生きとしたキャラクターたちは年齢問わず
+                </p>
+                <p>
+                  多くのファンを魅了し、特に若い女性からの絶大な支持を得て
+                </p>
+                <p>いる。</p>
+              </div>
+            </div>
+          </div>
+          <div class="third-section">
+            <div class="third-section-box">
+              <div class="music-box">アニメーション制作</div>
+              <p class="maxim">シャフト</p>
+              <div class="fourth-section">
+                <p>
+                  1975年の創立から約40年にわたり作品制作とクリエイティブス
+                </p>
+                <p>
+                  タッフの育成を主に活動しているアニメ制作会社。独特の色彩
+                </p>
+                <p>
+                  感や演出方法で知られており、代表作に「化物語」や「魔法少
+                </p>
+                <p>女まどか☆マギカ」「打ち上げ花火、下から見るか？横から見</p>
+                <p>
+                  るか？」など。テレビシリーズだけでなく劇場版なども手がけ
+                </p>
+                <p>る。</p>
+              </div>
+            </div>
+          </div>
+          <section class="section-top-2">
+            <div class="if-onePeaceCara-2">
+              <img class="onePiece-seiSyu-2" src="image/aoharuone.svg" alt="ハングリーデイズ　カップヌードル" />
+              <p>
+                原作：「ONE
+                PIECE」尾田栄一郎（集英社　週刊「少年ジャンプ」連載）
+              </p>
+              <p>キャラクターデザイン／窪之内英策</p>
+              <p>音楽／マキシマム ザ ホルモン「ハングリー・プライド」</p>
+              <p>
+                作詞・作曲／マキシマムザ亮君　編曲／マキシマム ザ ホルモン
+              </p>
+              <p>ECD／齋藤和典</p>
+              <p>クリエーティブディレクター・企画・コピー／佐藤雄介</p>
+              <p>企画・コピー／秋田勇人・武田裕輝</p>
+              <p>アートディレクター／前田彩</p>
+              <p>グラフィックデザイナー／小山雪</p>
+              <p>監督／高瀬裕介</p>
+              <p>アニメーション制作／シャフト</p>
+              <p>
+                アニメーションキャラクター設計・レイアウト・作画監督／名倉靖博
+              </p>
+              <p>CG制作／MORIE inc.・旭プロダクション・FLUX・StealthWorks</p>
+              <p>プロデューサー／早坂匡裕・長谷川武徳</p>
+              <p>プロダクションマネージャー／馬場玲瑠・工藤拓・大野瑞樹</p>
+              <p>
+                VFX
+                Artist／佐々木賢一　ミキサー／綾城重理人　音響効果／浅梨なおこ
+              </p>
+              <p>仕上げ協力／JHOSON・久藤拓実・柴野剛宏・吉田一樹・JACKY</p>
+              <p>〈予告篇制作〉</p>
+              <p>クリエーティブディレクター・企画・コピー／佐藤雄介</p>
+              <p>企画・コピー／秋田勇人・武田裕輝</p>
+              <p>アートディレクター／前田彩</p>
+              <p>監督／平岡政展</p>
+              <p>イラストレーター／窪之内英策</p>
+              <p>プロデューサー／早坂匡裕・長谷川武徳</p>
+              <p>プロダクションマネージャー／馬場玲瑠・工藤拓・大野瑞樹</p>
+              <p>ミキサー／川村大介</p>
+              <p>〈グラフィック制作〉</p>
+              <p>クリエーティブディレクター・コピー／佐藤雄介</p>
+              <p>アートディレクター／前田彩</p>
+              <p>グラフィックデザイナー／石川真衣・小楠泰大・小山雪</p>
+              <p>コピー／秋田勇人・武田裕輝</p>
+              <p>イラストレーター／窪之内英策</p>
+              <p>背景着彩／山田だり</p>
+              <p>レタッチ／濱中英華</p>
+              <p>監修／集英社・東映アニメーション</p>
+            </div>
+          </section>
+          <section class="section-top-3">
+            <div class="if-onePeaceCara-3">
+              <img class="onePiece-seiSyu-3" src="image/staff_illust.png" alt="ハングリーデイズ　カップヌードル" />
+            </div>
+          </section>
+          <!-- コピーライト -->
+          <div class="COPYRIGHT">
+            <div class="COPYRIGHT-zone">
+              <p>© 尾田栄一郎／集英社・フジテレビ・東映アニメーション</p>
+              <p>© 2019 EISAKU KUBONOUCHI / METEOR STREAMS</p>
+              <img class="COPYRIGHT-zone-img" src="image/logo_onepiece.svg" alt="ワンピース　コピーライト" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- スペシャル -->
+      <section class="specials">
+        <div class="specials-div-mother">
+          <div class="specials-div">SPECIAL</div>
+        </div>
+        <div class="specials-img">
+          <img src="image/special_nice.jpg" alt="３つのカップヌードル" />
+          <img src="image/special_doitnow.jpg" alt="八村塁　do it now" />
+          <img src="image/special_momo.jpg" alt="百福ヌードル" />
+        </div>
+        <div class="specials-imgMuseum">
+          <img src="image/special_musium.png" alt="" />
+        </div>
+      </section>
+      <!-- シェア　Facebook　Twitter -->
+      <div class="shareFatW">
+        <div class="shareFatW-div">
+          <div class="shareFatW-div-share">SHARE</div>
+          <img class="shareFatW-div-fa" src="image/sns_facebook.svg" alt="" />
+          <img class="shareFatW-div-tw" src="image/sns_twitter.svg" alt="" />
+        </div>
+      </div>
+      <!-- ラストバー -->
+      <div class="lastBar"></div>
+      <!-- フッター -->
+      <div class="div">
+        <div class="productType">
+          <div class="productType-1">
+            <img class="productType-1-img" src="image/bnr_brandsite_cup.jpg" alt="" />
+            <p class="productType-1-p">カップヌードル</p>
+          </div>
+          <div class="productType-1">
+            <img class="productType-1-img" src="image/bnr_brandsite_don.jpg" alt="" />
+            <p class="productType-1-p">日清のどん兵衛</p>
+          </div>
+          <div class="productType-1">
+            <img class="productType-1-img" src="image/bnr_brandsite_chi.jpg" alt="" />
+            <p class="productType-1-p">チキンラーメン</p>
+          </div>
+          <div class="productType-1">
+            <img class="productType-1-img" src="image/bnr_brandsite_ufo.jpg" alt="" />
+            <p class="productType-1-p">日清焼そばU.F.O.</p>
+          </div>
+          <div class="productType-1">
+            <img class="productType-1-img" src="image/bnr_brandsite_rao.jpg" alt="" />
+            <p class="productType-1-p">日清ラ王</p>
+          </div>
+          <div class="productType-1">
+            <img class="productType-1-img" src="image/bnr_brandsite_km.jpg" alt="" />
+            <p class="productType-1-p">日清カレーメシ</p>
+          </div>
+        </div>
+      </div>
+      <div class="productType-2">
+        <div class="productType-2-div">
+          <img class="productType-2-img" src="image/logo.png" alt="" />
+        </div>
+        <div class="productType-2-div">
+          <img class="productType-2-img" src="image/bnr_onlinestore.jpg" alt="" />
+        </div>
+        <div class="productType-2-div">
+          <img class="productType-2-img" src="image/bnr_hungrytowin.jpg" alt="" />
+        </div>
+        <div class="productType-2-div">
+          <img class="productType-2-img" src="image/bnr_kindai5.jpg" alt="" />
+        </div>
+        <div class="last">
+          <div class="hover-reds">
+            <p class="red-p1">商品に関するお問い合わせ　|</p>
+            <p class="red-p1">プライバシーポリシー　|</p>
+            <p class="red-p1">サイトのご利用について</p>
+          </div>
+          <p class="red-p2">
+            このサイトに関するお問い合わせ先：日清食品グループウェブダイヤル／0120-208-802
+            (受付時間：9:00～17:00 土・日・祝日を除く)
+          </p>
+          <p class="red-p3">
+            Copyright ©2020 NISSIN FOODS HOLDINGS CO.,LTD. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="inquiry_form_zone">
-      <div class="request">
-        ご依頼・ご相談等無料でお引き受けします。
-        メール、各種SNSのDMお待ちしております。 気楽にご連絡してください。
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div class="icons">
-        <!-- メール -->
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-gitlab"></i>
-      </div>
-      <div class="name">Nakamura Arata</div>
-      <div class="mail">mail:bball6bball15@gmail.com</div>
-      <div class="inquiry_form_copyright">
-        <div class="inquiry_text">Copyright © Arata portfolio 2020</div>
-      </div>
-    </div>
+  </section>
+  <div class="footer-topics-mother">
+    <div class="footer-topics">topics</div>
   </div>
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
